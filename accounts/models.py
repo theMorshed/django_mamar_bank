@@ -22,3 +22,6 @@ class UserAddress(models.Model):
     postal_code = models.IntegerField()
     country = models.CharField(max_length=100)
     
+    def __str__(self):
+        return self.user.email
+    
